@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>ChicStyle</title>
+  </head>
+  <body onload="showSection('section1')">
+    <header>
+      <div class="logo">ChicStyle</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="SobreNosotros.htm">Sobre Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contáctanos</a></li>
+          <li><a href="#" onclick="showSection('cart')">Carrito</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </header>
+    <section>
+      <div class="menu">
+        <a href="#" onclick="showSection('section1')">Blusas</a>
+        <a href="#" onclick="showSection('section2')">Vestidos</a>
+        <a href="#" onclick="showSection('section3')">Faldas</a>
+        <a href="#" onclick="showSection('section4')">Pantalones</a>
+        <a href="#" onclick="showSection('section5')">Shorts</a>
+        <a href="#" onclick="showSection('section6')">Enterizos</a>
+        <a href="#" onclick="showSection('cart')">Carrito</a></div>
+      </div>
+      <div id="section1" class="section">
+        <div class="products">
+          <div class="product">
+            <img
+              src="Colores/Blusas/32577a703b56329b68e29b7db0f6f720.jpg"
+              alt="Producto 1"
+            />
+            <h3>Blusa 1</h3>
+            <p>Descripción del producto 1.</p>
+            <p class="price">$9.99</p>
+            <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/Blusas/3cfc6067958d578f29c16679b2492879.jpg"
+              alt="Producto 2"
+            />
+            <h3>Blusa 2</h3>
+            <p>Descripción del producto 2.</p>
+            <p class="price">$79.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/Blusas/3d2c149d25a21db4644e1ca2151e1026.jpg"
+              alt="Producto 3"
+            />
+            <h3>Blusa 3</h3>
+            <p>Descripción del producto 3.</p>
+            <p class="price">$129.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/Blusas/4a6c5da78b4a5bc8fdbcad42649d5710.jpg"
+              alt="Producto 1"
+            />
+            <h3>Blusa 4</h3>
+            <p>Descripción del producto 1.</p>
+            <p class="price">$99.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/Blusas/4b17fff050bdf5ad17db042e00e4771f.jpg"
+              alt="Producto 2"
+            />
+            <h3>Blusa 5</h3>
+            <p>Descripción del producto 2.</p>
+            <p class="price">$79.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/Blusas/5f1dfa189e25f076a47c779d84b363e4.jpg"
+              alt="Producto 3"
+            />
+            <h3>Blusa 6</h3>
+            <p>Descripción del producto 3.</p>
+            <p class="price">$129.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/Blusas/6b51231d652fa1772ab0edf4d7dd0338.jpg"
+              alt="Producto 1"
+            />
+            <h3>Blusa 7</h3>
+            <p>Descripción del producto 1.</p>
+            <p class="price">$99.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/Blusas/8960eefbcedee4c63071752caf89cadb.jpg"
+              alt="Producto 2"
+            />
+            <h3>Blusa 8</h3>
+            <p>Descripción del producto 2.</p>
+            <p class="price">$79.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/Blusas/a00ae8aea45a11ada3b89df28c504886.jpg"
+              alt="Producto 3"
+            />
+            <h3>Blusa 9</h3>
+            <p>Descripción del producto 3.</p>
+            <p class="price">$129.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="cart" class="section" style="display: none">
+        <h2>Carrito</h2>
+        <div id="cartItems"></div>
+        <p id="totalPrice"></p>
+      </div>
+      <div id="section2" class="section">
+        <div class="products">
+          <div class="product">
+            <img
+              src="Colores/vestidos/14ca3145ec0234f8b541a13abbf71906.jpg"
+              alt="Producto 1"
+            />
+            <h3>Vestido 1</h3>
+            <p>Descripción del producto 1.</p>
+            <p class="price">$9.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/vestidos/4d00f1dd7920bd0a3a909e4523c9a755.jpg"
+              alt="Producto 2"
+            />
+            <h3>Vestido 2</h3>
+            <p>Descripción del producto 2.</p>
+            <p class="price">$79.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/vestidos/63c3e87b99e536b7826ddf816b5a32cc.jpg"
+              alt="Producto 3"
+            />
+            <h3>Vestido 3</h3>
+            <p>Descripción del producto 3.</p>
+            <p class="price">$129.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/vestidos/701dbb4b5e9fb96235750ca7d1823a15.jpg"
+              alt="Producto 1"
+            />
+            <h3>Vestido 4</h3>
+            <p>Descripción del producto 1.</p>
+            <p class="price">$99.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/vestidos/7c0e1d65e1ee4b842e27bf81186e5126.jpg"
+              alt="Producto 2"
+            />
+            <h3>Vestido 5</h3>
+            <p>Descripción del producto 2.</p>
+            <p class="price">$79.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/vestidos/9f32c4db4d57a307344daec72dd2663a.jpg"
+              alt="Producto 3"
+            />
+            <h3>Vestido 6</h3>
+            <p>Descripción del producto 3.</p>
+            <p class="price">$129.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/vestidos/a2aa4acf0f8f626a39e8ef9a536cec93.jpg"
+              alt="Producto 1"
+            />
+            <h3>Vestido 7</h3>
+            <p>Descripción del producto 1.</p>
+            <p class="price">$99.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/vestidos/venta-de-vestidos-de-fiesta-1200x685.jpg"
+              alt="Producto 2"
+            />
+            <h3>Vestido 8</h3>
+            <p>Descripción del producto 2.</p>
+            <p class="price">$79.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img src="Colores/vestidos/images.jpg" alt="Producto 3" />
+            <h3>Vestido 9</h3>
+            <p>Descripción del producto 3.</p>
+            <p class="price">$129.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="cart" class="section" style="display: none;">
+        <h2>Carrito</h2>
+        <div id="cartItems"></div>
+        <p id="totalPrice"></p>
+      </div>
+      <div id="section3" class="section">
+        <div class="products">
+          <div class="product">
+            <img
+              src="Colores/faldas/1c6b0a844c68e8c4e897fe5d20e9a281.jpg"
+              alt="Producto 1"
+            />
+            <h3>Falda 1</h3>
+            <p>Descripción del producto 1.</p>
+            <p class="price">$9.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/faldas/0464c1dbb9e3416bf922797caa8a1d5f.jpg"
+              alt="Producto 2"
+            />
+            <h3>Falda 2</h3>
+            <p>Descripción del producto 2.</p>
+            <p class="price">$7.99</p>
+             <button onclick="addToCart('Producto 2', 7.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/faldas/21f6189203192d03b91b99aa9a4c7e6b.jpg"
+              alt="Producto 3"
+            />
+            <h3>Falda 3</h3>
+            <p>Descripción del producto 3.</p>
+            <p class="price">$10.99</p>
+             <button onclick="addToCart('Producto 3', 10.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/faldas/4425f80fedbc082e8f0ceef325f6c847.jpg"
+              alt="Producto 1"
+            />
+            <h3>Falda 4</h3>
+            <p>Descripción del producto 1.</p>
+            <p class="price">$99.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/faldas/54867c55d8b5e139078f378cd03e2677.jpg"
+              alt="Producto 2"
+            />
+            <h3>Falda 5</h3>
+            <p>Descripción del producto 2.</p>
+            <p class="price">$7.99</p>
+             <button onclick="addToCart('Producto 2', 7.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/faldas/630d4f1d1ac3912fdf98638a0ecb68a3.jpg"
+              alt="Producto 3"
+            />
+            <h3>Falda 6</h3>
+            <p>Descripción del producto 3.</p>
+            <p class="price">$12.99</p>
+             <button onclick="addToCart('Producto 1', 12.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/faldas/87fb8c78abafb482f1dc080199b4e9b9.jpg"
+              alt="Producto 1"
+            />
+            <h3>Falda 7</h3>
+            <p>Descripción del producto 1.</p>
+            <p class="price">$9.99</p>
+             <button onclick="addToCart('Producto 2', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/faldas/8c19de65753d736237ec4ef254573f6c.jpg"
+              alt="Producto 2"
+            />
+            <h3>Falda 8</h3>
+            <p>Descripción del producto 2.</p>
+            <p class="price">$7.99</p>
+             <button onclick="addToCart('Producto 2', 7.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/faldas/9b37c3b6db89307a65f98a51f4371f24.jpg"
+              alt="Producto 3"
+            />
+            <h3>Falda 9</h3>
+            <p>Descripción del producto 3.</p>
+            <p class="price">$10.99</p>
+             <button onclick="addToCart('Producto 3', 10.99)">
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="cart" class="section" style="display: none;">
+        <h2>Carrito</h2>
+        <div id="cartItems"></div>
+        <p id="totalPrice"></p>
+      </div>
+      <div id="section4" class="section">
+        <div class="products">
+          <div class="product">
+            <img
+              src="Colores/pantalon/22e41950d72d3078be6ce3a17c71ee96.jpg"
+              alt="Producto 1"
+            />
+            <h3>Pantalón 1</h3>
+            <p>Descripción del producto 1.</p>
+            <p class="price">$9.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/pantalon/6c3fb2ff52cd692e95e7e67aea801413.jpg"
+              alt="Producto 2"
+            />
+            <h3>Pantalón 2</h3>
+            <p>Descripción del producto 2.</p>
+            <p class="price">$7.99</p>
+             <button onclick="addToCart('Producto 2', 7.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/pantalon/731491e1c614cf6ae62a68ba216590e9.jpg"
+              alt="Producto 3"
+            />
+            <h3>Pantalón 3</h3>
+            <p>Descripción del producto 3.</p>
+            <p class="price">$129.99</p>
+             <button onclick="addToCart('Producto 3', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/pantalon/82e67d4b0e42d4a073df8eba0a49b79c.jpg"
+              alt="Producto 1"
+            />
+            <h3>Pantalón 4</h3>
+            <p>Descripción del producto 1.</p>
+            <p class="price">$9.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/pantalon/8e6e3bd8f584d21e0a79bfb1565b8f04.jpg"
+              alt="Producto 2"
+            />
+            <h3>Pantalón 5</h3>
+            <p>Descripción del producto 2.</p>
+            <p class="price">$7.99</p>
+             <button onclick="addToCart('Producto 2', 7.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/pantalon/a67aed6ec5ad168db8ec48bb6d6ca2d5.jpg"
+              alt="Producto 3"
+            />
+            <h3>Pantalón 6</h3>
+            <p>Descripción del producto 3.</p>
+            <p class="price">$10.99</p>
+             <button onclick="addToCart('Producto 3', 10.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/pantalon/b15c8da614cc417f58bfd44a32410df4.jpg"
+              alt="Producto 1"
+            />
+            <h3>Pantalón 7</h3>
+            <p>Descripción del producto 1.</p>
+            <p class="price">$99.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/pantalon/bfbf07c7b71ef3f60ff200202705d633.jpg"
+              alt="Producto 2"
+            />
+            <h3>Pantalón 8</h3>
+            <p>Descripción del producto 2.</p>
+            <p class="price">$7.99</p>
+             <button onclick="addToCart('Producto 2', 7.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/pantalon/22e41950d72d3078be6ce3a17c71ee96.jpg"
+              alt="Producto 3"
+            />
+            <h3>Pantalón 9</h3>
+            <p>Descripción del producto 3.</p>
+            <p class="price">$10.99</p>
+             <button onclick="addToCart('Producto 3', 10.99)">
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="cart" class="section" style="display: none;">
+        <h2>Carrito</h2>
+        <div id="cartItems"></div>
+        <p id="totalPrice"></p>
+      </div>
+      <div id="section5" class="section">
+        <div class="products">
+          <div class="product">
+            <img
+              src="Colores/short/03b62b598c09ddf601c21ceef112273c.jpg"
+              alt="Producto 1"
+            />
+            <h3>Producto 1</h3>
+            <p>Descripción del producto 1.</p>
+            <p class="price">$9.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/short/1c8831420f4d6045dddfb749f5aca115.jpg"
+              alt="Producto 2"
+            />
+            <h3>Producto 2</h3>
+            <p>Descripción del producto 2.</p>
+            <p class="price">$7.99</p>
+             <button onclick="addToCart('Producto 2', 7.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/short/1dce2df8c3b7e57cc538739d6fc480be.jpg"
+              alt="Producto 3"
+            />
+            <h3>Producto 3</h3>
+            <p>Descripción del producto 3.</p>
+            <p class="price">$10.99</p>
+             <button onclick="addToCart('Producto 3', 10.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/short/362dc8d5f2f7a1c5593e386403f8395f.jpg"
+              alt="Producto 1"
+            />
+            <h3>Producto 1</h3>
+            <p>Descripción del producto 1.</p>
+            <p class="price">$99.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/short/362dc8d5f2f7a1c5593e386403f8395f.jpg"
+              alt="Producto 2"
+            />
+            <h3>Producto 2</h3>
+            <p>Descripción del producto 2.</p>
+            <p class="price">$7.99</p>
+             <button onclick="addToCart('Producto 2', 7.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/short/4a040384a680843468a57d2c11d29589.jpg"
+              alt="Producto 3"
+            />
+            <h3>Producto 3</h3>
+            <p>Descripción del producto 3.</p>
+            <p class="price">$10.99</p>
+             <button onclick="addToCart('Producto 3', 10.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/short/8526993ad90737713aec2af839f64bbc.jpg"
+              alt="Producto 1"
+            />
+            <h3>Producto 1</h3>
+            <p>Descripción del producto 1.</p>
+            <p class="price">$99.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/short/ced21029870cfb111db781d428d519c3.jpg"
+              alt="Producto 2"
+            />
+            <h3>Producto 2</h3>
+            <p>Descripción del producto 2.</p>
+            <p class="price">$7.99</p>
+             <button onclick="addToCart('Producto 2', 7.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/short/d0d52869264a83dc23c1a2a4de2ff94a.jpg"
+              alt="Producto 3"
+            />
+            <h3>Producto 3</h3>
+            <p>Descripción del producto 3.</p>
+            <p class="price">$10.99</p>
+            <button onclick="addToCart('Producto 3', 10.99)">
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="cart" class="section" style="display: none;">
+        <h2>Carrito</h2>
+        <div id="cartItems"></div>
+        <p id="totalPrice"></p>
+      </div>
+      <div id="section6" class="section">
+        <div class="products">
+          <div class="product">
+            <img
+              src="Colores/enterizos/30d78357cda7fa91050cfaf839c19266.jpg"
+              alt="Producto 1"
+            />
+            <h3>Producto 1</h3>
+            <p>Descripción del producto 1.</p>
+            <p class="price">$9.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/enterizos/3548742a0b93a32ed8d6f0c57511d6af.jpg"
+              alt="Producto 2"
+            />
+            <h3>Producto 2</h3>
+            <p>Descripción del producto 2.</p>
+            <p class="price">$7.99</p>
+             <button onclick="addToCart('Producto 2', 7.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/enterizos/3c9bf9376874e41017940f85a38a7766.jpg"
+              alt="Producto 3"
+            />
+            <h3>Producto 3</h3>
+            <p>Descripción del producto 3.</p>
+            <p class="price">$129.99</p>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/enterizos/3c9bf9376874e41017940f85a38a7766.jpg"
+              alt="Producto 1"
+            />
+            <h3>Producto 1</h3>
+            <p>Descripción del producto 1.</p>
+            <p class="price">$9.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/enterizos/798e95552cd4509f2934490aaaed8788.jpg"
+              alt="Producto 2"
+            />
+            <h3>Producto 2</h3>
+            <p>Descripción del producto 2.</p>
+            <p class="price">$7.99</p>
+             <button onclick="addToCart('Producto 2', 7.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/enterizos/872a49e2080999b46ddade7d1f9e97a6.jpg"
+              alt="Producto 3"
+            />
+            <h3>Producto 3</h3>
+            <p>Descripción del producto 3.</p>
+            <p class="price">$129.99</p>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/enterizos/9fd74af3d6b9e1b7354cf010628e5687.jpg"
+              alt="Producto 1"
+            />
+            <h3>Producto 1</h3>
+            <p>Descripción del producto 1.</p>
+            <p class="price">$9.99</p>
+             <button onclick="addToCart('Producto 1', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/enterizos/b8c2ec7021767d0553767178e016fc4b.jpg"
+              alt="Producto 2"
+            />
+            <h3>Producto 2</h3>
+            <p>Descripción del producto 2.</p>
+            <p class="price">$7.99</p>
+             <button onclick="addToCart('Producto 2', 7.99)">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="Colores/enterizos/d9ef6beb492ddea182afde4463cc5fd3.jpg"
+              alt="Producto 3"
+            />
+            <h3>Producto 3</h3>
+            <p>Descripción del producto 3.</p>
+            <p class="price">$9.99</p>
+             <button onclick="addToCart('Producto 3', 9.99)">
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="cart" class="section" style="display: none;">
+        <h2>Carrito</h2>
+        <div id="cartItems"></div>
+        <p id="totalPrice"></p>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="redes">
+        <ul>
+          <li class="listados_dos">
+            <a href="#" class="social-icon">
+              <img src="Colores/icon/facebook.png"
+            /></a>
+          </li>
+          <li class="listados_dos">
+            <a href="#" class="social-icon">
+              <img src="Colores/icon/instagram.png"
+            /></a>
+          </li>
+          <li class="listados_dos">
+            <a href="#" class="social-icon">
+              <img src="Colores/icon/twitter.png"
+            /></a>
+          </li>
+          <li class="listados_dos">
+            <a href="#" class="social-icon">
+              <img src="Colores/icon/whatsapp.png"
+            /></a>
+          </li>
+        </ul>
+      </div>
+
+      <di class="menu_dos">
+        <ul>
+          <li class="listados_dos">
+            <a href="index.html" class="active">Inicio </a>
+          </li>
+          <li class="listados_dos">
+            <a href="SobreNosotros.htm" class="active">Sobre Nosotros</a>
+          </li>
+          <li class="listados_dos">
+            <a href="productos.html" class="active">Productos</a>
+          </li>
+          <li class="listados_dos">
+            <a href="contacto.html" class="active">Contacto</a>
+          </li>
+        </ul>
+      </di>
+
+      <p class="derechos">ChicStyle @ 2024</p>
+    </footer>
+    <script src="jscript.js"></script>
+  </body>
+</html>
